@@ -40,7 +40,7 @@ void MenuNelayan(){
     switch (pilihan)
     {
       case 1: LihatPermintaan();break;
-      case 2: inputTangkapan;break;
+      case 2: inputTangkapan();break;
       default: cout<<"Inputan tidak valid!"<<endl;
     
     }

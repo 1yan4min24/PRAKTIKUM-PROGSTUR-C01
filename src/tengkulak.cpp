@@ -41,6 +41,7 @@ void MenuTengkulak(){
     cout<<"2. Lihat LOT Lelang"<<endl;
     cout<<"3. Beli Ikan Lelang"<<endl;
     cout<<"4. Jual Ikan"<<endl;
+    cout<<"0. Kembali"<<endl;
     cout<<"Pilih: ";
     cin>>pilihan;
 

@@ -35,9 +35,11 @@ void MenuOrangPasar(){
         cout<<"\n=== MENU ORANG PASAR ===\n";
         cout<<"1. Beli Ikan\n";
         cout<<"0. Kembali\n";
+        cout<<"PIlih: ";
         cin>>pilih;
         switch (pilih) {
             case 1: Beli_Ikan(); break;
+            default: cout<<"Inputan tidak valid!"<<endl;
         }
     }while(pilih !=0);
 }
