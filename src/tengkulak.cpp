@@ -16,6 +16,23 @@ void LihatLOT(){
 
 
 
+void Jual_ikan(){
+  cout<<"\n=== Jual Ikan ===\n";
+  if (stokTengkulak.empty()){
+    cout<<"Belum ada ikan yang dapat dijual";
+  }
+
+  for (auto &st:stokTengkulak){
+    cout<< "Jenis: "<< st.jenis<< " | "<< "Berat (kg): "<<st.berat<<" kg"<<endl;
+    cout<<"Harga: ";
+    cin>>st.harga;
+    pasar.push_back(st);
+    cout<<endl;
+  }
+  stokTengkulak.clear();
+  cout<<"Menjual Ikan!"<<endl;
+}
+
 void MenuTengkulak(){
    int pilihan;
    do{
@@ -30,8 +47,11 @@ void MenuTengkulak(){
     switch (pilihan)
     {
       case 1: LihatPermintaan();break;
-      case 2:
+      case 2: LihatLOT(); break;
+      case 3:
+      case 4: Jual_ikan();break;
+      default:cout<<"Inputan tidak valid!"<<endl;
 
     }
-   }while (pilihan != 0)
+   }while (pilihan != 0);
 }
