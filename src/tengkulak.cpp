@@ -6,7 +6,12 @@ using namespace std;
 
 void LihatLOT(){
   cout<<"\n=== Lihat LOT ==\n";
-  for(auto )
+  for(int i = 0; i < lotLelang.size(); i++){
+      cout<<i+1 << "Jenis: "<<lotLelang[i].jenis<<" | "<< "Berat(kg): "<< lotLelang[i].berat<<" kg"
+      <<" | "<< "Harga: "<<lotLelang[i].harga<<endl;
+
+    }
+    cout<<endl;
 }
 
 
