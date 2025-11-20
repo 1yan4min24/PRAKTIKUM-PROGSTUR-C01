@@ -13,6 +13,6 @@ extern vector<Ikan>dataTangkapan;
 extern vector<Ikan>lotLelang;
 extern vector<Ikan>stokTengkulak;
 extern vector<Ikan>pasar;
-extern vector<Ikan>permintaanPasar;
+extern vector<string>permintaanPasar;
 
 #endif

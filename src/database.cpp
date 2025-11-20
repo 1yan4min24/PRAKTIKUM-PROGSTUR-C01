@@ -1,6 +1,8 @@
 #include<iostream>
 #include"../Include/database.hpp"
+
 using namespace std;
+
 vector<Ikan>dataTangkapan;
 vector<Ikan>lotLelang;
 vector<Ikan>stokTengkulak;
