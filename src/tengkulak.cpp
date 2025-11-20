@@ -14,7 +14,33 @@ void LihatLOT(){
     cout<<endl;
 }
 
+void Beli_IkanLelang (){
+  LihatLOT();
+  if (lotLelang.empty()) {
+    cout<< "TIDAK ADA LOT\n"<<endl;
+  }
+  int pilihan; 
+  cout<< "Pilih nomor LOT yang ingin dibeli: ";
+  cin>>pilihan;
+  pilihan--;
 
+  if (pilihan<0 || pilihan >= lotLelang.size()) {
+    cout<< "Pilihan tidak valid!\n\n";
+    return;
+  }
+  int tawaran;
+  cout<<" Masukan Harga Tawaran Anda: ";
+  cin>>tawaran;
+
+  if (tawaran>=lotLelang[pilihan].harga){
+    cout<< ">> Tawaran diterima! anda membeli" << lotLelang[pilihan].jenis<<"\n";
+    stokTengkulak.push_back(lotLelang[pilihan]);
+    lotLelang.erase(lotLelang.begin()+pilihan);
+    cout<<" <<Ikan Masuk ke stok tengkulak\n; ";
+  }else{
+    cout<<"<<Tawaran Terlalu rendah! LOT tidak jadi dibelu. \n";
+  }
+}
 
 void Jual_ikan(){
   cout<<"\n=== Jual Ikan ===\n";
