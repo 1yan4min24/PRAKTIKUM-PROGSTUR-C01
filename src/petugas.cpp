@@ -41,7 +41,7 @@ void MenuPetugasTPI(){
     {
       case 1: LihatTangkapan();break;
       case 2: Lelang();break;
-      default: cout<<"Inputan tidak valid!!"<<endl;
+      default : cout<<"Inputan Tidak valid!"<<endl;
     }
   }while(pilihan != 0);
 }

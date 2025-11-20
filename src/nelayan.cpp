@@ -4,12 +4,12 @@
 using namespace std;
 
 
-void LihatPermintaan(){
-  cout<<"\n=== Permintaan Pasar ===\n";
-  for(auto &p : permintaanPasar){
-    cout<<"- "<<p<<endl;
-  }
-} 
+// void LihatPermintaan(){
+//   cout<<"\n=== Permintaan Pasar ===\n";
+//   for(auto &p : permintaanPasar){
+//     cout<<"- "<<p<<endl;
+//   }
+// } 
 
 
 void inputTangkapan(){
