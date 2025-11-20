@@ -35,6 +35,7 @@ void MenuPetugasTPI(){
     cout<<"1. Lihat Hasil Tangkapan Nelayan"<<endl;
     cout<<"2. Melakukan Lelang"<<endl;
     cout<<"0. Kembali"<<endl;
+    cout<<"Pilih: ";
     cin>>pilihan;
 
     switch (pilihan)

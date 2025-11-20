@@ -16,10 +16,10 @@ int main(){
 
     switch (pilihan)
     {
-      case 1: MenuNelayan();
-      case 2: MenuPetugasTPI();
-      case 3: MenuTengkulak();
-      case 4: MenuOrangPasar();
+      case 1: MenuNelayan();break;
+      case 2: MenuPetugasTPI();break;
+      case 3: MenuTengkulak();break;
+      case 4: MenuOrangPasar();break;
       default: cout<<"Inputan tidak valid!!"<<endl;
     }
   }while (pilihan != 0);
